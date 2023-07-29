@@ -41,5 +41,4 @@ const run = setInterval(() => {
 
 function restart() {
     location.reload(run)
-    // console.log('clic0u')
 }
