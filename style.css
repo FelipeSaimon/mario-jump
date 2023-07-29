@@ -9,6 +9,7 @@
 body{
     background-color: bisque;
     font-family: 'VT323', monospace;
+    height: 100vh;
 }
 
 div.container{
