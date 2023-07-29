@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: bisque;
+    font-family: 'VT323', monospace;
+}
+
+div.container{
+    position: relative;
+    margin: 15px auto;
+    background-color: rgb(122, 165, 247);
+    width: 80%;
+    height: 500px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+.gameOverText{
+    display: none;
+    width: 400px;
+    margin: auto;
+}
+
+.pontuacao{
+    font-size: 36px;
+    position: absolute;
+    right: 20px;
+}
+
+.pipe{
+    display: block;
+    position: absolute;
+    bottom: 80px;
+    width: 100px;
+    animation: pipeAnimation 1s linear infinite;
+}
+
+
+@keyframes pipeAnimation{
+    from {right: -100px;}
+    to{right: 100%;}
+}
+
+.mario-running{
+    width: 180px;
+    position: absolute;
+    bottom: 80px;
+}
+
+.pulo{
+    animation: marioPulo 1s;
+}
+
+@keyframes marioPulo{
+    0% {bottom: 80px;}
+    40% {bottom: 250px;}
+    50% {bottom: 250px;}
+    60% {bottom: 250px;}
+}
+
+.chao{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+
+.restart{
+    display: block;
+    border: none;
+    width: 0;
+    margin: auto;
+}
+
+.restart img{
+    width: 150px;
+}
