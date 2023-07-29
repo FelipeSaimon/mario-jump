@@ -25,6 +25,7 @@ div.container{
     display: none;
     width: 400px;
     margin: auto;
+    z-index: 99;
 }
 
 .pontuacao{
