@@ -22,7 +22,7 @@ const run = setInterval(() => {
     let posPipe = pipe.offsetLeft
     let posMario = +window.getComputedStyle(mario).bottom.replace('px', '')
 
-    if (posPipe <= 176 && posPipe > 0 && posMario < 200) {
+    if (posPipe <= 176 && posPipe > 0 && posMario < 180) {
         pipe.style.animation = 'none'
         pipe.style.left = `${posPipe}px`
 
